@@ -1,0 +1,423 @@
+
+
+body{
+    font-family: 'Signika Negative', sans-serif;
+}
+
+nav {
+    width: 900px;
+    margin-left: 50px;
+    font-color: black;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.7);
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+ul#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    opacity: 0.5;
+}
+
+li {
+    float: left;
+	padding-left: 2%;
+}
+
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+li a:hover:not(.active) {
+    background-color: #ddd;
+}
+
+li a.active {
+    color: white;
+    background-color: #4CAF50;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo{
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+.content h1,h2{
+    font-family: 'Kaushan Script', cursive;
+    color: white;
+    font-size: 50px;
+    text-shadow: 4px 4px 5px rgba(0,0,0,0.5);
+}
+
+.content{
+    text-align: center;
+}
+
+.cover{
+    position: relative;
+    background: url(../images/20.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+.info{
+    background-color: #1c1c1d;
+    color: white;
+    padding: 20px;
+}
+
+.infoContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.infoContent .block h3{
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 25px;
+    margin: 5px 0 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.infoContent .block h3 a {
+    color: #ffffff;
+    text-shadow: 2px 2px 3px black;
+}
+
+.infoContent .block{
+    padding: 8px;
+    width: 100%;
+}
+
+.btn{
+    font-family: 'Signika Negative', sans-serif;
+    padding: 10px 50px;
+    border-radius: 30px;
+    border: 2px solid grey;
+    background-color: transparent;
+    color: white;
+    font-weight: 600;
+    margin: 10px 0;
+    display: inline-block;
+    transition: 0.3s;
+    box-shadow: 0px 1px 3px black;
+}
+
+.btn:hover{
+    transform: scale(1.2);
+    letter-spacing: 3px;
+    background-color: #666;
+    color: white;
+}
+
+/* #################  FOOTER ############################################################################*/
+footer{
+    width: 100%;
+    clear: both;
+    color: #666;
+    background: #141419;
+    line-height: 40px;
+    overflow: hidden;
+}
+footer .left{
+    float: left;
+    margin-left: 20px;
+}
+footer .right{
+    float: right;
+    margin-right: 20px;
+}
+
+/*####################### RESPONSIVE ###############################################################*/
+@media all and (min-width: 769px){
+    .content h1{
+        font-size: 100px;
+    }
+
+    .infoContent .block{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width : 320px) 
+{
+    .cajas{width: 100%}
+    .info{word-break: break-word}
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) 
+{
+   .cajas{width: 100%}
+   .info{word-break: break-word}
+}
+
+/* ####################### CAJAS #################################################################*/
+
+.boxinicio {
+    width: 900px;
+    height: 600px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-color:black;
+    border-radius: 25px;
+    padding: 20px;
+}
+
+.box {
+    width: 900px;
+    height: 600px;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-color:black;
+    border-radius: 25px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.7);
+}
+
+img.galeria{
+    display: block;
+    float: left;
+    height: 150px;
+    width: 150px;
+    margin: 15px;
+}
+
+
+
+
+
+/* #################  FORMULARIO ############################################################################*/
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:1px;
+}
+.formulario {
+    display:block;
+    margin:0 auto;
+    width:510px;
+    color: #666666;
+    font-family:Arial;
+}
+form {
+    margin:0 auto;
+    width:400px;
+    text-align: center;
+}
+ 
+input, textarea {
+    width:380px;
+    height:27px;
+    border:2px solid #f6f6f6;
+    padding:5px;
+    margin-top:5px;
+}
+ 
+textarea {
+    height:150px;
+}
+ 
+#submit {
+    width:85px;
+    height:35px;
+    border:none;
+    margin-top:20px;
+    cursor:pointer;
+}
+
+
+/* #################  VISOR DE IMAGENES ############################################################################*/
+.smoothbox {
+    position: fixed;
+    top:0;
+    left:0;
+    background:rgb(0,0,0);
+    background: rgba(0, 0, 0, 0.9);
+    height:100%;
+    width:100%;
+    z-index: 9999;
+}
+/* wrapper after loading */
+.sb-load {
+    background:url('images/load.gif') center no-repeat rgba(0,0,0,.9);
+}
+/* vertical centering */
+.smoothbox-table {
+    top:0;
+    height:100%;
+    width:100%;
+    display:table;
+}
+.smoothbox-centering {
+    display:table-cell;
+    vertical-align:middle;
+    top:0;
+    height:100%;
+    width:100%;
+}
+/* horizontal centering & sizing */
+.smoothbox-sizing {
+    display:none;
+    position: relative;
+    margin: 0 auto;
+    padding: 0px;
+    width: 80%;
+}
+/* item wrapper */
+.sb-items {
+    margin: 0 auto;
+    width: auto;
+    padding: 0;
+    list-style: none;    
+    border-radius: 2px;
+    display: table;
+}
+.sb-items:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+/* items */
+.sb-item {
+    left: 0;
+    top:0;
+    width: 100%;
+    max-height: 80%;
+    float: left;
+    margin-right: -100%;
+    position: relative;
+    zoom: 1;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px 5px rgba(0, 0, 0, 1), 0px 0px 0px 6px #292929;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: all .4s ease-out;
+    -moz-transition:all .4s ease-out;
+    transition: all .4s ease-out;
+}
+
+.no-trans {
+    -webkit-transition:none;
+    -moz-transition:none;
+    transition:none;
+}
+
+.sb-item img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    border-radius: 2px;
+    position: relative;
+}
+/* forward animation */
+.sb-item-ani {
+    top: 400px;
+    opacity:0;
+    -webkit-transform:scale(.5)rotate(25deg);
+    -moz-transform:scale(.5)rotate(25deg);
+    transform:scale(.5)rotate(25deg);
+}
+/* back animation */
+.sb-item-ani2 {
+    top:400px;
+    -webkit-transform:scale(.5) rotate(25deg);
+    -moz-transform:scale(.5) rotate(25deg);
+    transform:scale(.5) rotate(25deg);
+    opacity:0;
+}
+.sb-caption {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background:rgb(0,0,0);
+    background: rgba(0, 0, 0, 0.9);
+    color: #CCC;
+    font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    padding: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    z-index: 1;
+    text-align: center;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+}
+/* buttons */
+.sb-nav {
+    position:absolute;
+    top: 10px;
+    width: 100%;
+    margin: 0 auto;
+    display: none;
+    z-index: 10;
+    text-align: center;
+    opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter: alpha(opacity=50);
+    font-size: 0;
+    -webkit-transition:all .15s ease-out;
+    -moz-transition:all .15s ease-out;
+    transition:all .15s ease-out;
+    zoom:1;
+}
+.sb-nav:hover {
+    opacity:1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: alpha(opacity=100);
+}
+
+.sb-prev, .sb-next, .sb-cancel {
+    display: inline-block;
+    background:rgb(0,0,0);
+    background: rgba(0, 0, 0, 0.9);
+    position: relative;
+    zoom:1;
+    outline:none;
+    margin-right:1px;
+    color: #fff!important;
+    width: 50px;
+    height: 35px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 33px;
+    -webkit-transition:all .15s ease-out;
+    -moz-transition:all .15s ease-out;
+    transition:all .15s ease-out;
+}
+.sb-prev {border-radius: 15px 0 0 15px;}
+.sb-next {border-radius: 0 15px 15px 0;}
+.sb-nav a:hover {
+    background: #fff;
+    color: #000!important;
+}
+.sb-cancel:hover {
+    background:#820001;
+}
+/* ################# FIN VISOR DE IMAGENES ############################################################################*/
